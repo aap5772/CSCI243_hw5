@@ -16,6 +16,7 @@ dynarray_t * dynarray_init(int capacity){
     array -> size = 0;
     return array;
 }
+
 void dynarray_insert(dynarray_t * dp, int data){
     if (dp -> size >= dp -> capacity){ // Checking if its too big, then changes up the stack allocation for a bigger array
         int new_cap = (dp -> capacity * 2) * sizeof(int);
@@ -52,8 +53,9 @@ void dynarray_free(dynarray_t * dp){
     free(dp -> ary);
     free(dp);
 }
+
 bst_node_t * bst_insert(bst_node_t * bp, int value){
-    if (bp == NULL){
+    if (bp == NULL){ // start a clean new
         bst_node_t *newNode = malloc(sizeof(bst_node_t));
         newNode -> data = value;
         newNode -> left = NULL;
@@ -82,7 +84,7 @@ void bst_traverse(const bst_node_t * bp, traversal_type_t tt){
     if (bp == NULL){
         return;
     }
-    switch(tt){
+    switch(tt){  //switching based on type
         case PREORDER:
             printf("%d\n", bp -> data);
             bst_traverse(bp->left, tt);
