@@ -1,0 +1,29 @@
+commit 9d0c14eec71d814795f77af8d5855ed7f2bb75ed
+Author: Alex <aap5772@rit.edu>
+Date:   Fri Feb 27 22:35:25 2026 -0500
+
+    commenting done
+
+commit b93ceb1897047c212f90c2f760081756a02f918e
+Author: Alex <aap5772@rit.edu>
+Date:   Fri Feb 27 22:00:41 2026 -0500
+
+    finished code
+
+commit 777f7075bad5a97dcef0b4e533da445e54b3afa5
+Author: Alex <aap5772@rit.edu>
+Date:   Fri Feb 27 20:34:58 2026 -0500
+
+    tested the array it works now
+
+commit 59614d96fbbd004a23fa67f6be121a9d58cd0117
+Author: Alex <aap5772@rit.edu>
+Date:   Fri Feb 27 20:22:34 2026 -0500
+
+    half way done? im getting a snack
+
+commit 9729c7452f08f259baaf0fd004a2d66edb3f544c
+Author: Alex <aap5772@rit.edu>
+Date:   Fri Feb 27 19:25:55 2026 -0500
+
+    initial commit
