@@ -19,7 +19,7 @@ dynarray_t * dynarray_init(int capacity){
 void dynarray_insert(dynarray_t * dp, int data){
     if (dp -> size >= dp -> capacity){ // Checking if its too big, then changes up the stack allocation for a bigger array
         int new_cap = (dp -> capacity * 2) * sizeof(int);
-        int *new_ary = realloc(dp -> ary, new_cap)
+        int *new_ary = realloc(dp -> ary, new_cap);
         dp -> ary = new_ary;
         dp -> capacity = new_cap;
     }
@@ -45,7 +45,7 @@ void dynarray_print(const dynarray_t * dp){
     }
 }
 
-void dynarray_print(const dynarray_t * dp){
+void dynarray_free(dynarray_t * dp){
     if (dp == NULL){
         return;
     }
@@ -75,4 +75,18 @@ bst_node_t * ary_to_bst(int size, const int x[]){
         tree = bst_insert(tree, x[i]);
     }
     return tree;
+}
+
+int main(int argc, char *argv[]){
+    FILE *fp = stdin;
+    if (argc > 1){
+        fp = fopen(argv[1], "r");
+            if (fp == NULL) {
+            perror("Failed to open file");
+            return EXIT_FAILURE;
+        }
+    }
+    dynarray_t *dp = dynarray_init(ARY_SIZE);
+    dynarray_read(dp, fp);
+    dynarray_print(dp);
 }

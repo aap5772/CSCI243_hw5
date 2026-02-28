@@ -3,11 +3,11 @@
 // Binary Search Tree structure and function declarations 
 //
 // @author: CS@RIT.EDU
-// @author: ====> FIXME: ENTER YOUR FULL NAME AND LOGIN ID HERE <====
+// @author: Alex Polo, aap5772
 
 #ifndef _BST_H
 #define _BST_H
-
+#include <stdio.h>
 // Note: the first definition is properly documented.
 
 #define ARY_SIZE 10 ///< initial dynamic array size
