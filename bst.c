@@ -97,8 +97,8 @@ void bst_traverse(const bst_node_t * bp, traversal_type_t tt){
             break;
         case POSTORDER:
             bst_traverse(bp -> left, tt);
-            printf("%d\n", bp -> data);
             bst_traverse(bp->right, tt);
+            printf("%d\n", bp -> data);
             break;
     }
 }
